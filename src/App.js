@@ -2,10 +2,10 @@ import {
   BrowserRouter, Routes, Route,
 } from 'react-router-dom';
 import './App.css';
-import Layout from './compoents/Layout';
-import Rockets from './compoents/Rockets';
-import Missions from './compoents/Missions';
-import MyProfile from './compoents/MyProfile';
+import Layout from './components/Layout';
+import Rockets from './components/Rockets';
+import Missions from './components/Missions';
+import MyProfile from './components/MyProfile';
 
 const App = () => (
   <BrowserRouter>
