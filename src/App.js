@@ -2,8 +2,8 @@ import {
   BrowserRouter, Routes, Route,
 } from 'react-router-dom';
 import './App.css';
-import Layout from './components/Layout';
-import Rockets from './components/Rockets';
+import Layout from './layout/Layout';
+import Rockets from './layout/Rockets';
 // import Missions from './components/Missions';
 // import MyProfile from './components/MyProfile';
 
