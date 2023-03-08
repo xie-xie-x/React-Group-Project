@@ -61,6 +61,11 @@
   object-fit: cover;
 }
 
+.myprofile h2 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
 .rocket .rocket-detail h2 {
   font-weight: 500;
 }
@@ -109,8 +114,8 @@
 }
 
 .myprofile h2 {
-  font-size: 25px;
-  font-weight: 400;
+    font-size: 25px;
+    font-weight: 400;
 }
 
 .mymissions {
