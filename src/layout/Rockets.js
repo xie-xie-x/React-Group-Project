@@ -19,7 +19,10 @@ const Rockets = () => {
             <img src={rocket.flickr_images} alt={rocket.id} />
             <div className="rocket-detail">
               <h2>{rocket.name}</h2>
-              <p>{rocket.description}</p>
+              <p>
+                {rocket.reserved === true ? <span className="reserve">Reserved</span> : ''}
+                {rocket.description}
+              </p>
               { rocket.reserved === false
                 ? (
                   <button className="btn1" onClick={() => { dispatch(reserveRocket(rocket.id)); }} type="button">Reserve Rocket</button>

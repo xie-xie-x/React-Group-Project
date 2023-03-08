@@ -41,3 +41,14 @@
 .rocket .rocket-detail button:hover {
     cursor: pointer;
 }
+
+.reserve {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #00bcbc;
+    list-style: none;
+    padding: 0px 4px 2px 4px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
