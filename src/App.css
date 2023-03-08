@@ -4,6 +4,47 @@
     box-sizing: border-box;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 75px;
+    border-bottom: 1.5px solid #bbbbbb;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar img {
+    width: 55px;
+}
+
+.navbar h1 {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.navbar .navLink span a:-webkit-any-link {
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    color: #1d70ff;
+    margin-right: 30px;
+}
+
+.navbar .navLink span:nth-child(2)::after {
+    content: '';
+  position: absolute;
+  width: 1.2px;
+  height: 20px;
+  top: 5.2%;
+  right: 12.5%;
+  background-color: #555555;
+}
+
 .rocket-container {
     width: 90%;
     margin: 30px auto;
