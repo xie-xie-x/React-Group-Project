@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchRocket } from '../redux/rockets/rocketsSlice';
+import { fetchRocket, reserveRocket } from '../redux/rockets/rocketsSlice';
 
 const Rockets = () => {
   const rockets = useSelector((state) => state.rockets);
@@ -20,7 +20,7 @@ const Rockets = () => {
             <div className="rocket-detail">
               <h2>{rocket.name}</h2>
               <p>{rocket.description}</p>
-              <button type="button">Reserve Rocket</button>
+              <button type="button" onClick={() => { dispatch(reserveRocket(rocket.id)); }}>Reserve Rocket</button>
             </div>
           </div>
         ))}
