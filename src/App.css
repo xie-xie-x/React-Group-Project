@@ -99,3 +99,37 @@
     border-radius: 3px;
     margin-right: 10px;
 }
+
+/* My Profile */
+.myprofile {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.myprofile h2 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.mymissions {
+    width: 49%;
+}
+
+.myrockets {
+    width: 49%;
+}
+
+.myrockets ul {
+    width: 70%;
+    margin-top: 20px;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+}
+
+.myrockets ul li {
+    list-style: none;
+    padding: 20px;
+    border-bottom: 1px solid #bbbbbb;
+}

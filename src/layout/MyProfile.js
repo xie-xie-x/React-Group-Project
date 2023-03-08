@@ -5,12 +5,12 @@ const MyProfile = () => {
   const reservedRocket = rockets.filter((rocket) => rocket.reserved === true);
 
   return (
-    <div className="myprofile-container">
+    <div className="myprofile">
       <div className="mymissions">
         <h2>My Missons</h2>
       </div>
       <div className="myrockets">
-        <h2>My Profile</h2>
+        <h2>My Rockets</h2>
         <ul>
           {reservedRocket.map((rocket) => (
             <li key={rocket.name}>{rocket.name}</li>
