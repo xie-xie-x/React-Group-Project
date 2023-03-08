@@ -28,14 +28,14 @@ const rocketsSlice = createSlice({
         return { ...rocket, reserved: true };
       });
     },
-  },
-  cancelReserve(state, action) {
-    return state.map((rocket) => {
-      if (rocket.id !== action.payload) {
-        return { ...rocket };
-      }
-      return { ...rocket, reserved: false };
-    });
+    cancelReserve(state, action) {
+      return state.map((rocket) => {
+        if (rocket.id !== action.payload) {
+          return { ...rocket };
+        }
+        return { ...rocket, reserved: false };
+      });
+    },
   },
   extraReducers: (builder) => {
     builder
