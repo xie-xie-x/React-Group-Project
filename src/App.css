@@ -79,6 +79,12 @@
     background-color: #3f6cff;
 }
 
+.rocket .rocket-detail .cancel-btn {
+    color: #555555;
+    background-color: #fff;
+    border: 1px solid #555555;
+}
+
 .rocket .rocket-detail button:hover {
     cursor: pointer;
 }
