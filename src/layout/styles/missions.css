@@ -1,0 +1,30 @@
+.mission_container {
+    padding: 1rem 5rem;
+}
+
+.table_container {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+}
+
+.table_container thead tr {
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #f0f0f0;
+}
+
+.table_container th,
+.table_container td {
+    padding: 12px 15px;
+}
+
+.table_container tbody tr {
+    border: 1px solid #f0f0f0;
+}
+
+.table_container tbody tr:nth-of-type(odd) {
+    background-color: #f3f3f3;
+}

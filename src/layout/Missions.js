@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import '../layout/styles/missions.css';
+import { fetchMissions, joinMission } from '../redux/missions/missionsSlice';
+import './styles/missions.css';
 
 const Missions = () => {
   const dispatch = useDispatch();
@@ -10,7 +11,7 @@ const Missions = () => {
     if (!missions.length) {
       dispatch(fetchMissions());
     }
-  }, [dispatch, missions]);
+  }, []);
 
   const missionHandler = (missionId) => {
     const mission = missions.find((mission) => mission.mission_id === missionId);
@@ -29,19 +30,40 @@ const Missions = () => {
             <th>Mission</th>
             <th>Description</th>
             <th>Status</th>
-            <th />
+            {/* <th /> */}
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Thaicon</td>
             <td>dgdfhhgshkfbvfljavbfb kjfbajdfbvusdbsf sufbhalkhgvjadbvjv</td>
+            <td>
+              <span>Not a member</span>
+            </td>
+            <td>
+              <button type="button" onClick={() => dispatch(missionHandler(missions.id))}>Join Mission</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Thaicon</td>
             <td>dgdfhhgshkfbvfljavbfb kjfbajdfbvusdbsf sufbhalkhgvjadbvjv</td>
             <td>
               <span>Not a member</span>
             </td>
             <td>
-              <button type="button">Join Mission</button>
+              <button type="button" onClick={() => dispatch(missionHandler(missions.id))}>Join Mission</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Thaicon</td>
+            <td>dgdfhhgshkfbvfljavbfb kjfbajdfbvusdbsf sufbhalkhgvjadbvjv</td>
+            <td>
+              <span>Not a member</span>
+            </td>
+            <td>
+              <button type="button" onClick={() => dispatch(missionHandler(missions.id))}>Join Mission</button>
             </td>
           </tr>
         </tbody>
