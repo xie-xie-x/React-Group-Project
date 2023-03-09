@@ -35,7 +35,7 @@ const Missions = () => {
         </thead>
         <tbody>
           <tr>
-            <td>Thaicon</td>
+            <td className="tbody_header">Thaicon</td>
             <td>dgdfhhgshkfbvfljavbfb kjfbajdfbvusdbsf sufbhalkhgvjadbvjv</td>
             <td>
               <span>Not a member</span>

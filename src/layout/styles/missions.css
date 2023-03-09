@@ -28,3 +28,7 @@
 .table_container tbody tr:nth-of-type(odd) {
     background-color: #f3f3f3;
 }
+
+.tbody_header {
+    font-weight: bold;
+}
