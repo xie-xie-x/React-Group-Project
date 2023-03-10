@@ -36,7 +36,7 @@ const Missions = () => {
           {missions.map((mission) => (
             <tr key={mission.mission_id} className="row">
               <td className="tbody_header">{mission.mission_name}</td>
-              <td className="pb-4">{mission.description}</td>
+              <td className="body_description pb-4">{mission.description}</td>
               <td>
                 <span>{mission.joined ? 'Active member' : 'NOT A MEMBER'}</span>
               </td>

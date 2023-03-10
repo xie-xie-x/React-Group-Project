@@ -32,6 +32,10 @@
 }
 
 .tbody_header {
+    max-width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     font-weight: bold;
 }
 
@@ -50,6 +54,7 @@ tbody tr button {
     width: 100%;
     display: flex;
     flex-direction: row;
+    font-size: 12px;
     align-items: center;
     justify-content: center;
     background-color: transparent;
@@ -57,12 +62,14 @@ tbody tr button {
     border: 1px solid black;
     border-radius: 5px;
     color: black;
-
 }
 
 .active_member {
     background-color: rgb(17, 166, 192);
     color: white;
-
 }
 
+.body_description {
+    max-width: 800px;
+    color: black;
+}
