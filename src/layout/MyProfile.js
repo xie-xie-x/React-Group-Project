@@ -8,7 +8,7 @@ const MyProfile = () => {
 
   return (
     <div className="myprofile">
-      <div className="my_missions">
+      <div className="mymissions">
         <h2>My Missions</h2>
         <ul>
           {reservedMission.map((mission) => (

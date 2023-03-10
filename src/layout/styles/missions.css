@@ -44,29 +44,36 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
     background-color: rgb(14, 44, 44);
-    padding: 3px 10px;
+    padding: 3px 0px;
     border-radius: 5px;
     color: #f0f0f0;
 }
 
-tbody tr button {
+.table_container tbody td .active_member {
+    background-color: rgb(17, 166, 192);
+    color: white;
+}
+
+tbody tr td button {
     width: 100%;
     display: flex;
     flex-direction: row;
-    font-size: 12px;
+    font-size: 13px;
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    padding: 3px 10px;
+    padding: 7px 0px;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 3px;
     color: black;
 }
 
-.active_member {
-    background-color: rgb(17, 166, 192);
-    color: white;
+tbody tr td .leave-mission {
+    border: 1px solid red;
+    color: red;
 }
 
 .body_description {

@@ -14,11 +14,12 @@ const Missions = () => {
   }, []);
 
   const missionHandler = (missionId) => {
-    const mission = missions.find((mission) => mission.mission_id === missionId);
+    const mission = missions.find(
+      (mission) => mission.mission_id === missionId,
+    );
     const newMission = { ...mission, joined: !mission.joined };
-    const newMissions = missions.map((mission) => (mission.mission_id === missionId
-      ? newMission
-      : mission));
+    const newMissions = missions.map((mission) => (
+      mission.mission_id === missionId ? newMission : mission));
     dispatch(joinMission(newMissions));
   };
 
@@ -38,19 +39,35 @@ const Missions = () => {
               <td className="tbody_header">{mission.mission_name}</td>
               <td className="body_description pb-4">{mission.description}</td>
               <td>
-                <span>{mission.joined ? 'Active member' : 'NOT A MEMBER'}</span>
+                {mission.joined ? (
+                  <span className="active_member">Active Member</span>
+                ) : (
+                  <span>NOT A MEMBER</span>
+                )}
               </td>
               <td>
-                <button type="button" onClick={() => missionHandler(mission.mission_id)}>{mission.joined ? 'Leave mission' : 'Join mission'}</button>
+                {mission.joined ? (
+                  <button
+                    type="button"
+                    className="leave-mission"
+                    onClick={() => missionHandler(mission.mission_id)}
+                  >
+                    Leave Mission
+                  </button>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => missionHandler(mission.mission_id)}
+                  >
+                    Join Mission
+                  </button>
+                )}
               </td>
             </tr>
           ))}
         </tbody>
-
       </table>
-
     </div>
-
   );
 };
 
