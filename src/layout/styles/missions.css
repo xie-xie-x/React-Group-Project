@@ -19,6 +19,8 @@
 .table_container th,
 .table_container td {
     padding: 12px 15px;
+    border-right: 1px solid #f0f0f0;
+    
 }
 
 .table_container tbody tr {
@@ -32,3 +34,35 @@
 .tbody_header {
     font-weight: bold;
 }
+
+.table_container tbody td span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14, 44, 44);
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: #f0f0f0;
+}
+
+tbody tr button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 3px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+
+}
+
+.active_member {
+    background-color: rgb(17, 166, 192);
+    color: white;
+
+}
+

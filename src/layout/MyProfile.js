@@ -10,7 +10,9 @@ const MyProfile = () => {
         <h2>My Missions</h2>
         <ul>
           {reservedMission.map((mission) => (
-            <li key={mission.id}>{mission.name} isRe</li>
+            <li key={mission.id}>
+              {mission.name}
+            </li>
           ))}
         </ul>
       </div>

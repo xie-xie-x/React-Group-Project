@@ -44,28 +44,6 @@ const Missions = () => {
               <button type="button" onClick={() => dispatch(missionHandler(missions.id))}>Join Mission</button>
             </td>
           </tr>
-
-          <tr>
-            <td>Thaicon</td>
-            <td>dgdfhhgshkfbvfljavbfb kjfbajdfbvusdbsf sufbhalkhgvjadbvjv</td>
-            <td>
-              <span>Not a member</span>
-            </td>
-            <td>
-              <button type="button" onClick={() => dispatch(missionHandler(missions.id))}>Join Mission</button>
-            </td>
-          </tr>
-
-          <tr>
-            <td>Thaicon</td>
-            <td>dgdfhhgshkfbvfljavbfb kjfbajdfbvusdbsf sufbhalkhgvjadbvjv</td>
-            <td>
-              <span>Not a member</span>
-            </td>
-            <td>
-              <button type="button" onClick={() => dispatch(missionHandler(missions.id))}>Join Mission</button>
-            </td>
-          </tr>
         </tbody>
 
       </table>
