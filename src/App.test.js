@@ -7,7 +7,7 @@ test('renders correctly', () => {
   const tree = renderer
     .create(
       <Provider store={store}>
-          <App />
+        <App />
       </Provider>,
     )
     .toJSON();
