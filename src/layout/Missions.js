@@ -6,6 +6,7 @@ import './styles/missions.css';
 const Missions = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions.missions);
+  console.log(missions);
 
   useEffect(() => {
     if (!missions.length) {
@@ -30,20 +31,21 @@ const Missions = () => {
             <th>Mission</th>
             <th>Description</th>
             <th>Status</th>
-            {/* <th /> */}
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td className="tbody_header">Thaicon</td>
-            <td>dgdfhhgshkfbvfljavbfb kjfbajdfbvusdbsf sufbhalkhgvjadbvjv</td>
-            <td>
-              <span>Not a member</span>
-            </td>
-            <td>
-              <button type="button" onClick={() => dispatch(missionHandler(missions.id))}>Join Mission</button>
-            </td>
-          </tr>
+          {missions.map((mission) => (
+            <tr key={mission.mission_id} className="row">
+              <td className="tbody_header">{mission.mission_name}</td>
+              <td className="pb-4">{mission.description}</td>
+              <td>
+                <span>{mission.joined ? 'Active member' : 'NOT A MEMBER'}</span>
+              </td>
+              <td>
+                <button type="button" onClick={() => missionHandler(mission.mission_id)}>{mission.joined ? 'Leave mission' : 'Join mission'}</button>
+              </td>
+            </tr>
+          ))}
         </tbody>
 
       </table>

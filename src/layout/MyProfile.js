@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux';
 
 const MyProfile = () => {
-  const missions = useSelector((state) => state.missions);
-  const reservedMission = missions.filter((mission) => mission.reserved === true);
+  const missions = useSelector((state) => state.missions.missions);
+  const reservedMission = missions.filter((mission) => mission.joined);
 
   return (
     <div className="myprofile">
@@ -10,8 +10,8 @@ const MyProfile = () => {
         <h2>My Missions</h2>
         <ul>
           {reservedMission.map((mission) => (
-            <li key={mission.id}>
-              {mission.name}
+            <li key={mission.mission_id}>
+              {mission.mission_name}
             </li>
           ))}
         </ul>
