@@ -1,82 +1,81 @@
 .mission_container {
-    padding: 1rem 5rem;
+  padding: 1rem 5rem;
 }
 
 .table_container {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
 }
 
 .table_container thead tr {
-    color: black;
-    text-align: left;
-    font-weight: bold;
-    border: 1px solid #f0f0f0;
+  color: black;
+  text-align: left;
+  font-weight: bold;
+  border: 1px solid #f0f0f0;
 }
 
 .table_container th,
 .table_container td {
-    padding: 12px 15px;
-    border-right: 1px solid #f0f0f0;
-    
+  padding: 12px 15px;
+  border-right: 1px solid #f0f0f0;
 }
 
 .table_container tbody tr {
-    border: 1px solid #f0f0f0;
+  border: 1px solid #f0f0f0;
 }
 
 .table_container tbody tr:nth-of-type(odd) {
-    background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
 
 .tbody_header {
-    max-width: 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    font-weight: bold;
+  max-width: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-weight: bold;
 }
 
 .table_container tbody td span {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    font-weight: 500;
-    background-color: rgb(14, 44, 44);
-    padding: 3px 0px;
-    border-radius: 5px;
-    color: #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: rgb(14, 44, 44);
+  padding: 3px 0;
+  border-radius: 5px;
+  color: #f0f0f0;
 }
 
 .table_container tbody td .active_member {
-    background-color: rgb(17, 166, 192);
-    color: white;
+  background-color: rgb(17, 166, 192);
+  color: white;
 }
 
 tbody tr td button {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    font-size: 13px;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    padding: 7px 0px;
-    border: 1px solid black;
-    border-radius: 3px;
-    color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 7px 0;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: black;
 }
 
 tbody tr td .leave-mission {
-    border: 1px solid red;
-    color: red;
+  border: 1px solid red;
+  color: red;
 }
 
 .body_description {
-    max-width: 800px;
-    color: black;
+  max-width: 800px;
+  color: black;
 }

@@ -9,7 +9,7 @@ const MyProfile = () => {
   return (
     <div className="myprofile">
       <div className="mymissions">
-        <h2>My Missions</h2>
+        <h3>My Missions</h3>
         <ul>
           {reservedMission.map((mission) => (
             <li key={mission.mission_id}>
@@ -19,7 +19,7 @@ const MyProfile = () => {
         </ul>
       </div>
       <div className="myrockets">
-        <h2>My Rockets</h2>
+        <h3>My Rockets</h3>
         <ul>
           {reservedRocket.map((rocket) => (
             <li key={rocket.name}>{rocket.name}</li>
