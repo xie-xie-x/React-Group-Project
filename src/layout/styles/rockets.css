@@ -1,0 +1,54 @@
+.rocket-container {
+    width: 90%;
+    margin: 30px auto;
+  }
+  
+  .rocket {
+    display: flex;
+    gap: 20px;
+    margin: 25px 0;
+  }
+  
+  .rocket img {
+    width: 270px;
+    object-fit: cover;
+  }
+  
+  .rocket .rocket-detail h2 {
+    font-weight: 500;
+  }
+  
+  .rocket .rocket-detail p {
+    margin: 8px 0;
+  }
+  
+  .rocket .rocket-detail button {
+    border: none;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #3f6cff;
+  }
+  
+  .rocket .rocket-detail .cancel-btn {
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #555;
+  }
+  
+  .rocket .rocket-detail button:hover {
+    cursor: pointer;
+  }
+  
+  .reserve {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #00bcbc;
+    list-style: none;
+    padding: 0 4px 2px 4px;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
