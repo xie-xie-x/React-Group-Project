@@ -20,23 +20,18 @@
     font-size: 27px;
     font-weight: 500;
   }
+
+  .navbar .navLink {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
   
   .navbar .navLink span a:-webkit-any-link {
     position: relative;
     text-decoration: none;
     font-size: 16px;
     color: #1d70ff;
-    margin-right: 30px;
-  }
-  
-  .navbar .navLink span:nth-child(2)::after {
-    content: '';
-    position: absolute;
-    width: 1.2px;
-    height: 20px;
-    top: 5.2%;
-    right: 12.5%;
-    background-color: #555;
   }
 
   .hamburger {
@@ -102,12 +97,8 @@
       font-size: 23px;
     }
 
-    .navbar .navLink span a:-webkit-any-link {
-      margin-right: 20px;
-    }
-
-    .navbar .navLink span:nth-child(2)::after {
-      display: none;
+    .navbar .navLink {
+      gap: 20px;
     }
 
     .navbar .navLink {
@@ -133,5 +124,31 @@
   
     .hamburger {
       display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .navbar h1.open {
+      display: none;
+    }
+
+    .navbar .navLink {
+      left: 50%;
+      transform: translateX(-50%);
+      animation: 2s 1 slidein;
+    }
+  
+    @keyframes slidein {
+      from {
+        left: 90%;
+      }
+  
+      to {
+        left: 50%;
+      }
+    }
+
+    .navbar .navLink span a:last-child {
+      margin-right: 0;
     }
   }
