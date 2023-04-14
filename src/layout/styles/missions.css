@@ -87,3 +87,34 @@ tbody tr td .leave-mission {
     padding: 1rem 2rem;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .mission_container {
+    padding: 1rem 2rem;
+  }
+
+  .table_container {
+    width: 100%;
+    display: flex;
+  }
+
+  .table_container thead th:last-child {
+    margin-top: 240px;
+  }
+
+  .table_container thead tr {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .table_container tbody tr {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .tbody_header {
+    max-width: 100%;
+    font-size: 1.1rem;
+  }
+}
