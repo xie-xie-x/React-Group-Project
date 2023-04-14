@@ -38,3 +38,17 @@
     right: 12.5%;
     background-color: #555;
   }
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding: 20px 40px;
+    }
+
+    .navbar h1 {
+      font-size: 24px;
+    }
+
+    .navbar .navLink span:nth-child(2)::after {
+      display: none;
+    }
+  }
