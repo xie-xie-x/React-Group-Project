@@ -43,10 +43,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  text-align: center;
   font-size: 12px;
   font-weight: 500;
   background-color: rgb(14, 44, 44);
-  padding: 3px 0;
+  padding: 5px 10px;
   border-radius: 5px;
   color: #f0f0f0;
 }
@@ -73,9 +74,16 @@ tbody tr td button {
 tbody tr td .leave-mission {
   border: 1px solid red;
   color: red;
+  text-align: center;
 }
 
 .body_description {
   max-width: 800px;
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .mission_container {
+    padding: 1rem 2rem;
+  }
 }
