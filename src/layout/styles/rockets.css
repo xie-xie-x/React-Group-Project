@@ -52,3 +52,22 @@
     border-radius: 3px;
     margin-right: 10px;
   }
+
+  @media screen and (max-width: 480px) {
+    .rocket {
+      flex-direction: column;
+      align-items: center;
+      margin: 50px auto;
+    }
+
+    .rocket img {
+      width: 80%;
+      object-fit: cover;
+    }
+
+    .rocket .rocket-detail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
