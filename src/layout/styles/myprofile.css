@@ -3,6 +3,7 @@
     margin: 30px auto;
     display: flex;
     justify-content: space-between;
+    justify-items: center;
   }
   
   .myprofile h3 {
@@ -12,6 +13,9 @@
   
   .mymissions {
     width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .mymissions ul {
@@ -29,6 +33,9 @@
   
   .myrockets {
     width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .myrockets ul {
