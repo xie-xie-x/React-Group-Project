@@ -39,16 +39,99 @@
     background-color: #555;
   }
 
+  .hamburger {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+    background-color: #fff;
+    border: none;
+  }
+  
+  .hamburger span {
+    background-color: #2f4f4f;
+    position: absolute;
+    border-radius: 2px;
+    transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    width: 100%;
+    height: 4px;
+    transition-duration: 500ms;
+  }
+  
+  .hamburger span:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+  
+  .hamburger span:nth-child(2) {
+    top: 8px;
+    left: 0;
+    opacity: 1;
+  }
+  
+  .hamburger span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+  }
+  
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+
   @media screen and (max-width: 768px) {
     .navbar {
       padding: 20px 40px;
     }
 
+    .navbar img {
+      width: 50px;
+    }
+
     .navbar h1 {
-      font-size: 24px;
+      font-size: 23px;
+    }
+
+    .navbar .navLink span a:-webkit-any-link {
+      margin-right: 20px;
     }
 
     .navbar .navLink span:nth-child(2)::after {
       display: none;
+    }
+
+    .navbar .navLink {
+      display: none;
+      position: absolute;
+      left: 52%;
+      animation: 2s 1 slidein;
+    }
+
+    .navbar .navLink.open {
+      display: flex;
+    }
+  
+    @keyframes slidein {
+      from {
+        left: 67%;
+      }
+  
+      to {
+        left: 52%;
+      }
+    }
+  
+    .hamburger {
+      display: inline-block;
     }
   }
