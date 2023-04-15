@@ -11,7 +11,7 @@ const Missions = () => {
     if (!missions.length) {
       dispatch(fetchMissions());
     }
-  }, []);
+  }, [missions.length, dispatch]);
 
   const missionHandler = (missionId) => {
     const mission = missions.find(

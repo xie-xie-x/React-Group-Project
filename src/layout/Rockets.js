@@ -10,7 +10,7 @@ const Rockets = () => {
 
   useEffect(() => {
     if (!rockets.length) dispatch(fetchRocket());
-  }, []);
+  }, [rockets.length, dispatch]);
 
   return (
     <>
