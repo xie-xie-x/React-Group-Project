@@ -31,7 +31,21 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Space_Travelers'_Hub] <a name="about-project"></a>
+# 📖 [Space Travelers' Hub] <a name="about-project"></a>
+
+<div align="center">
+  <img src="src/photo/spacetravelers.png" alt="project sample" width="650"  height="auto" />
+  <br/>
+  <img src="src/photo/space travelers screenshot 1.png" alt="project sample" width="650"  height="auto" />
+  <br/>
+  <img src="src/photo/space travelers screenshot 2.png" alt="project sample" width="650"  height="auto" />
+  <br/>
+  <img src="src/photo/space travelers screenshot 3.png" alt="project sample" width="650"  height="auto" />
+  <br/>
+
+  <h3><b>Space Travelers' Hub</b></h3>
+
+</div>
 
 > Space Travelers' Hub is a web application that provides commercial and scientific space travel services using the real live data from the SpaceX API. The application will allow users to book rockets and join selected space missions.
 
@@ -63,7 +77,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- live demo will appear when ready
+- [Live Demo Link](https://space-travelers-hub121.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,7 +104,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd react-group-project
-  git clone https://github.com/Rhaegar121/React-Group-Project
+  git clone https://github.com/Rhaegar121/Space-Travelers-Hub
 ```
 
 ### Install
